@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sangrah Authentication</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container" id="loginContainer">
+        <h2>Login to Sangrah</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn">Login</button>
+        </form>
+        <div class="switch">
+            <p>Don't have an account? <a id="switchToRegister">Register</a></p>
+            <p><a id="switchToForgotPassword">Forgot Password?</a></p>
+        </div>
+    </div>
+
+    <div class="container" id="registerContainer" style="display:none;">
+        <h2>Register on Sangrah</h2>
+        <form id="registerForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="registerEmail">Email</label>
+                <input type="email" id="registerEmail" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="registerPassword">Password</label>
+                <input type="password" id="registerPassword" name="password" required>
+            </div>
+            <button type="submit" class="btn">Register</button>
+        </form>
+        <div class="switch">
+            <p>Already have an account? <a id="switchToLogin">Login</a></p>
+        </div>
+    </div>
+
+    <div class="container" id="forgotPasswordContainer" style="display:none;">
+        <h2>Forgot Password</h2>
+        <form id="forgotPasswordForm">
+            <div class="form-group">
+                <label for="forgotEmail">Email</label>
+                <input type="email" id="forgotEmail" name="forgotEmail" required>
+            </div>
+            <button type="submit" class="btn">Reset Password</button>
+        </form>
+        <div class="switch">
+            <p>Remembered your password? <a id="switchToLoginFromForgot">Login</a></p>
+        </div>
+    </div>
+</body>
+</html>
